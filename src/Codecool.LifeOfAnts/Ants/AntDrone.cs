@@ -31,6 +31,10 @@ public class AntDrone : Ant
                     _queen.MatingMoodCounter = Util.PickRandomNumber(50, 100);
                     Console.WriteLine("HALLELUJAH");
                 }
+                else
+                {
+                    GetKickedToBorder();
+                }
             }
         }
         else
@@ -88,6 +92,8 @@ public class AntDrone : Ant
         {
             Position = Util.MakeNextMovePosition(direction, Position);
         }
+
+        /*Position = Util.MakeNextMovePosition(direction, Position);*/
     }
 
     public override string ToString()
