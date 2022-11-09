@@ -15,5 +15,6 @@ public abstract class Ant
         _position = position;
     }
 
+    public abstract void Act(int width);
     public abstract override string ToString();
 }

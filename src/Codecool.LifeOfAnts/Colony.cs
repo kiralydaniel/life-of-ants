@@ -12,5 +12,10 @@ public class Colony
     {
         _colonyWidth = colonyWidth;
     }
-    
+
+    private Position FindCenter()
+    {
+        int centerCoord = (_colonyWidth - 1) / 2;
+        return new Position(centerCoord, centerCoord);
+    }
 }
